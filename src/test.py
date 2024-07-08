@@ -1,6 +1,7 @@
+
 from base.cls.employee import Employee
-from base.color.green import green
 from base.color.red import red
+from base.color.green import green
 
 if __name__ == '__main__':
     print("hello world")
