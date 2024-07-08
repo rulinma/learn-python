@@ -6,11 +6,11 @@ import sys
 # 但更常见的是使用TestLoader来自动发现测试
 
 if __name__ == '__main__':
-    sys.path.append('/Users/rulin/program/temp/learn-python/')
+    # sys.path.append('/Users/rulin/program/temp/learn-python/')
     # 使用TestLoader来自动发现测试
     loader = unittest.TestLoader()
     # 假设你的测试文件都在tests目录下，并且文件名以test_开头
-    suite = loader.discover('/Users/rulin/program/temp/learn-python/test/unit', pattern='test_*.py')
+    suite = loader.discover('./', pattern='test_*.py')
 
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)
