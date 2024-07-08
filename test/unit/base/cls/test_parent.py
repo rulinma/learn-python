@@ -4,6 +4,12 @@ from base.cls.parent import Child
 
 
 class TestStringMethods(unittest.TestCase):
+    def setUp(self):
+        print('setUp...')
+
+    def tearDown(self):
+        print('tearDown...')
+
     def test_one(self):
         print("test one")
         c = Child()
