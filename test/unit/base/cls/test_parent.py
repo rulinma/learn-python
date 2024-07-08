@@ -1,6 +1,6 @@
 import unittest
 
-from base.cls.parent import Child
+from src.base.cls.parent import Child
 
 
 class TestStringMethods(unittest.TestCase):

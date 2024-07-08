@@ -1,7 +1,6 @@
 import unittest
 
-from base.cls.employee import Employee
-from base.cls.parent import Child
+from src.base.cls.employee import Employee
 
 
 class TestStringMethods(unittest.TestCase):
