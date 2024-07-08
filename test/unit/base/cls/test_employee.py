@@ -3,7 +3,7 @@ import unittest
 from base.cls.employee import Employee
 
 
-class TestStringMethods(unittest.TestCase):
+class TestEmployeeMethods(unittest.TestCase):
     def setUp(self):
         print('setUp...')
 
