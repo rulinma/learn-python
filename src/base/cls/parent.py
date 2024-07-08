@@ -12,6 +12,7 @@ class Parent:  # 定义父类
 
     def get_attr(self):
         print("父类属性 :", Parent.parentAttr)
+        return Parent.parentAttr
 
 
 class Child(Parent):  # 定义子类
@@ -27,4 +28,5 @@ if __name__ == '__main__':
     c.child_method()  # 调用子类的方法
     c.parent_method()  # 调用父类方法
     c.set_attr(200)  # 再次调用父类的方法 - 设置属性值
-    c.get_attr()  # 再次调用父类的方法 - 获取属性值
+    print(c.get_attr())  # 再次调用父类的方法 - 获取属性值
+    print(Parent.parentAttr)
